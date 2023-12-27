@@ -40,6 +40,17 @@
 		0517F1FE2AE75DF700FD855A /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0517F1FD2AE75DF700FD855A /* FirebaseStorage */; };
 		0517F2002AE75DF700FD855A /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 0517F1FF2AE75DF700FD855A /* FirebaseStorageCombine-Community */; };
 		0517F2032AE7685400FD855A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0517F2022AE7685400FD855A /* AppDelegate.swift */; };
+		05364DC32B3704A100B00A16 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05364DC22B3704A100B00A16 /* RegisterView.swift */; };
+		05364DC62B3704B000B00A16 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05364DC52B3704B000B00A16 /* RegisterViewModel.swift */; };
+		05364DC92B37075600B00A16 /* StatesEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05364DC82B37075600B00A16 /* StatesEnum.swift */; };
+		054BA0002B3A76AB00DC82A2 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B9FFF2B3A76AB00DC82A2 /* Router.swift */; };
+		054BA0032B3A78B500DC82A2 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054BA0022B3A78B500DC82A2 /* ProfileView.swift */; };
+		054BA0092B3ADC0700DC82A2 /* RegisterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054BA0082B3ADC0700DC82A2 /* RegisterRepository.swift */; };
+		054BA00B2B3ADCA400DC82A2 /* RegisterUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054BA00A2B3ADCA400DC82A2 /* RegisterUseCase.swift */; };
+		054BA0142B3AE10F00DC82A2 /* RegisterRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054BA0132B3AE10F00DC82A2 /* RegisterRepositoryImpl.swift */; };
+		054BA01B2B3C0F5500DC82A2 /* RegisterRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054BA01A2B3C0F5500DC82A2 /* RegisterRequestModel.swift */; };
+		054BA0202B3C123300DC82A2 /* LoginReponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054BA01F2B3C123300DC82A2 /* LoginReponseModel.swift */; };
+		054BA0232B3C217400DC82A2 /* EnvironmentValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054BA0222B3C217400DC82A2 /* EnvironmentValues.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +61,17 @@
 		0517F1C12AE7581100FD855A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0517F1C82AE758F600FD855A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0517F2022AE7685400FD855A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		05364DC22B3704A100B00A16 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		05364DC52B3704B000B00A16 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		05364DC82B37075600B00A16 /* StatesEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatesEnum.swift; sourceTree = "<group>"; };
+		054B9FFF2B3A76AB00DC82A2 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		054BA0022B3A78B500DC82A2 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		054BA0082B3ADC0700DC82A2 /* RegisterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRepository.swift; sourceTree = "<group>"; };
+		054BA00A2B3ADCA400DC82A2 /* RegisterUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUseCase.swift; sourceTree = "<group>"; };
+		054BA0132B3AE10F00DC82A2 /* RegisterRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRepositoryImpl.swift; sourceTree = "<group>"; };
+		054BA01A2B3C0F5500DC82A2 /* RegisterRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequestModel.swift; sourceTree = "<group>"; };
+		054BA01F2B3C123300DC82A2 /* LoginReponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginReponseModel.swift; sourceTree = "<group>"; };
+		054BA0222B3C217400DC82A2 /* EnvironmentValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentValues.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +132,10 @@
 		0517F1B92AE7581000FD855A /* StudyFora */ = {
 			isa = PBXGroup;
 			children = (
+				05364DBE2B37040E00B00A16 /* Components */,
+				05364DBC2B36CFFB00B00A16 /* Core */,
+				05364DB22B36A63600B00A16 /* Features */,
+				05364DBD2B36D00600B00A16 /* Utils */,
 				0517F2022AE7685400FD855A /* AppDelegate.swift */,
 				0517F1BA2AE7581000FD855A /* StudyForaApp.swift */,
 				0517F1BC2AE7581000FD855A /* ContentView.swift */,
@@ -127,6 +153,253 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		05364DB22B36A63600B00A16 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				054BA01C2B3C120400DC82A2 /* Login */,
+				05364DBF2B37046A00B00A16 /* Register */,
+				05364DB32B36A6A700B00A16 /* Profile */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		05364DB32B36A6A700B00A16 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				05364DB52B36A6C500B00A16 /* Domain */,
+				05364DB62B36A6CB00B00A16 /* Presentation */,
+				05364DB42B36A6C000B00A16 /* Data */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		05364DB42B36A6C000B00A16 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				05364DB92B36CD9B00B00A16 /* RepositoryImpl */,
+				05364DB72B36CD8400B00A16 /* DataSource */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		05364DB52B36A6C500B00A16 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				05364DBB2B36CFBD00B00A16 /* Repository */,
+				05364DBA2B36CFB900B00A16 /* UseCase */,
+				05364DB82B36CD9700B00A16 /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		05364DB62B36A6CB00B00A16 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				054BA0012B3A78AA00DC82A2 /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		05364DB72B36CD8400B00A16 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		05364DB82B36CD9700B00A16 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		05364DB92B36CD9B00B00A16 /* RepositoryImpl */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RepositoryImpl;
+			sourceTree = "<group>";
+		};
+		05364DBA2B36CFB900B00A16 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		05364DBB2B36CFBD00B00A16 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		05364DBC2B36CFFB00B00A16 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				054BA0212B3C20AD00DC82A2 /* Extension */,
+				054B9FFE2B3A76A000DC82A2 /* Router */,
+				05364DC72B37074B00B00A16 /* Enum */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		05364DBD2B36D00600B00A16 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		05364DBE2B37040E00B00A16 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		05364DBF2B37046A00B00A16 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				054BA0112B3AE0F200DC82A2 /* Data */,
+				054BA0052B3ADBCE00DC82A2 /* Domain */,
+				05364DC02B37047400B00A16 /* Presentation */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		05364DC02B37047400B00A16 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				05364DC42B3704A700B00A16 /* ViewModel */,
+				05364DC12B37048E00B00A16 /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		05364DC12B37048E00B00A16 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				05364DC22B3704A100B00A16 /* RegisterView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		05364DC42B3704A700B00A16 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				05364DC52B3704B000B00A16 /* RegisterViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		05364DC72B37074B00B00A16 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				05364DC82B37075600B00A16 /* StatesEnum.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		054B9FFE2B3A76A000DC82A2 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				054B9FFF2B3A76AB00DC82A2 /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		054BA0012B3A78AA00DC82A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				054BA0022B3A78B500DC82A2 /* ProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		054BA0052B3ADBCE00DC82A2 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				054BA0072B3ADBF700DC82A2 /* Repository */,
+				054BA0062B3ADBDA00DC82A2 /* UseCase */,
+				054BA00E2B3ADF4500DC82A2 /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		054BA0062B3ADBDA00DC82A2 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				054BA00A2B3ADCA400DC82A2 /* RegisterUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		054BA0072B3ADBF700DC82A2 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				054BA0082B3ADC0700DC82A2 /* RegisterRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		054BA00E2B3ADF4500DC82A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				054BA01A2B3C0F5500DC82A2 /* RegisterRequestModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		054BA0112B3AE0F200DC82A2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				054BA0122B3AE0F800DC82A2 /* RepositoryImpl */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		054BA0122B3AE0F800DC82A2 /* RepositoryImpl */ = {
+			isa = PBXGroup;
+			children = (
+				054BA0132B3AE10F00DC82A2 /* RegisterRepositoryImpl.swift */,
+			);
+			path = RepositoryImpl;
+			sourceTree = "<group>";
+		};
+		054BA01C2B3C120400DC82A2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				054BA01D2B3C122200DC82A2 /* Domain */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		054BA01D2B3C122200DC82A2 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				054BA01E2B3C122800DC82A2 /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		054BA01E2B3C122800DC82A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				054BA01F2B3C123300DC82A2 /* LoginReponseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		054BA0212B3C20AD00DC82A2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				054BA0222B3C217400DC82A2 /* EnvironmentValues.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +410,7 @@
 				0517F1B32AE7581000FD855A /* Sources */,
 				0517F1B42AE7581000FD855A /* Frameworks */,
 				0517F1B52AE7581000FD855A /* Resources */,
+				054BA0042B3AB45D00DC82A2 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -225,14 +499,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		054BA0042B3AB45D00DC82A2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${PRODUCT_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist",
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/GoogleService-Info.plist",
+				"$(TARGET_BUILD_DIR)/$(EXECUTABLE_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0517F1B32AE7581000FD855A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				054BA0032B3A78B500DC82A2 /* ProfileView.swift in Sources */,
+				054BA0142B3AE10F00DC82A2 /* RegisterRepositoryImpl.swift in Sources */,
 				0517F2032AE7685400FD855A /* AppDelegate.swift in Sources */,
 				0517F1BD2AE7581000FD855A /* ContentView.swift in Sources */,
+				05364DC32B3704A100B00A16 /* RegisterView.swift in Sources */,
+				054BA0002B3A76AB00DC82A2 /* Router.swift in Sources */,
+				05364DC62B3704B000B00A16 /* RegisterViewModel.swift in Sources */,
+				054BA0092B3ADC0700DC82A2 /* RegisterRepository.swift in Sources */,
+				05364DC92B37075600B00A16 /* StatesEnum.swift in Sources */,
+				054BA0232B3C217400DC82A2 /* EnvironmentValues.swift in Sources */,
+				054BA00B2B3ADCA400DC82A2 /* RegisterUseCase.swift in Sources */,
+				054BA01B2B3C0F5500DC82A2 /* RegisterRequestModel.swift in Sources */,
 				0517F1BB2AE7581000FD855A /* StudyForaApp.swift in Sources */,
+				054BA0202B3C123300DC82A2 /* LoginReponseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +677,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"StudyFora/Preview Content\"";
 				DEVELOPMENT_TEAM = BJAYFXKN5Y;
 				ENABLE_PREVIEWS = YES;
@@ -374,6 +687,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -381,9 +695,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.carissafarry.StudyFora;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -403,6 +719,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -410,9 +727,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.carissafarry.StudyFora;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

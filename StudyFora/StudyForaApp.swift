@@ -10,10 +10,18 @@ import SwiftUI
 @main
 struct StudyForaApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    @ObservedObject var router = Router()
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack(path: $router.navPath) {
+                ContentView()
+                .navigationDestination(for: Router.Destination.self) { destination in
+                    Routes(route: destination)
+                }
+            }
+            .environmentObject(router)
+            
         }
     }
 }
