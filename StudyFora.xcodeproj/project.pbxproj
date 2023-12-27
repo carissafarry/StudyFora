@@ -40,6 +40,7 @@
 		0517F1FE2AE75DF700FD855A /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0517F1FD2AE75DF700FD855A /* FirebaseStorage */; };
 		0517F2002AE75DF700FD855A /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 0517F1FF2AE75DF700FD855A /* FirebaseStorageCombine-Community */; };
 		0517F2032AE7685400FD855A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0517F2022AE7685400FD855A /* AppDelegate.swift */; };
+		054BA0002B3A76AB00DC82A2 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B9FFF2B3A76AB00DC82A2 /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
