@@ -15,12 +15,15 @@ class RegisterViewModel: ObservableObject {
     
     func register(data: RegisterRequestModel) async {
         do {
+            states = .loading
+            
             if let res = try await registerUseCase.execute(data: data) {
                 userLogin = LoginResponseModel(
                     uid: res.user.uid,
                     email: res.user.email!
                 )
             }
+            states = .success
         } catch let error {
             states = .error
         }
