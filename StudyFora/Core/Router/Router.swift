@@ -14,6 +14,8 @@ struct Routes: View {
         switch route {
         case .register:
             RegisterView()
+        case .login:
+            LoginView()
         case .profile:
             ProfileView()
         }
@@ -24,6 +26,7 @@ final class Router: ObservableObject {
     
     public enum Destination: Codable, Hashable {
         case register
+        case login
         case profile
     }
 

@@ -20,6 +20,11 @@ struct ContentView: View {
                 router.navigate(to: .register)
             }
             .padding(.top, 12)
+            
+            Button("**Login Page**") {
+                router.navigate(to: .login)
+            }
+            .padding(.top, 12)
         }
         .padding()
     }

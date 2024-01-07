@@ -11,7 +11,6 @@
 		0517F1BD2AE7581000FD855A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0517F1BC2AE7581000FD855A /* ContentView.swift */; };
 		0517F1BF2AE7581100FD855A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0517F1BE2AE7581100FD855A /* Assets.xcassets */; };
 		0517F1C22AE7581100FD855A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0517F1C12AE7581100FD855A /* Preview Assets.xcassets */; };
-		0517F1C92AE758F600FD855A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0517F1C82AE758F600FD855A /* GoogleService-Info.plist */; };
 		0517F1CC2AE75DF700FD855A /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0517F1CB2AE75DF700FD855A /* FirebaseAnalytics */; };
 		0517F1CE2AE75DF700FD855A /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 0517F1CD2AE75DF700FD855A /* FirebaseAnalyticsOnDeviceConversion */; };
 		0517F1D02AE75DF700FD855A /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0517F1CF2AE75DF700FD855A /* FirebaseAnalyticsSwift */; };
@@ -51,6 +50,17 @@
 		054BA01B2B3C0F5500DC82A2 /* RegisterRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054BA01A2B3C0F5500DC82A2 /* RegisterRequestModel.swift */; };
 		054BA0202B3C123300DC82A2 /* LoginReponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054BA01F2B3C123300DC82A2 /* LoginReponseModel.swift */; };
 		054BA0232B3C217400DC82A2 /* EnvironmentValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054BA0222B3C217400DC82A2 /* EnvironmentValues.swift */; };
+		0557F9EB2B4950CC00D05A3C /* EmailLoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0557F9EA2B4950CC00D05A3C /* EmailLoginUseCase.swift */; };
+		0557F9EE2B4950E000D05A3C /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0557F9ED2B4950E000D05A3C /* LoginRepository.swift */; };
+		0557F9F22B4951AC00D05A3C /* LoginRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0557F9F12B4951AC00D05A3C /* LoginRepositoryImpl.swift */; };
+		0557F9F72B4952AC00D05A3C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0557F9F62B4952AC00D05A3C /* LoginView.swift */; };
+		0557F9F92B49530400D05A3C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0557F9F82B49530400D05A3C /* LoginViewModel.swift */; };
+		0557F9FC2B49560F00D05A3C /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 0557F9FB2B49560F00D05A3C /* GoogleSignIn */; };
+		0557F9FE2B49560F00D05A3C /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0557F9FD2B49560F00D05A3C /* GoogleSignInSwift */; };
+		0557FA012B495E2900D05A3C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0557FA002B495E2900D05A3C /* GoogleService-Info.plist */; };
+		0557FA032B4A523E00D05A3C /* GoogleLoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0557FA022B4A523E00D05A3C /* GoogleLoginUseCase.swift */; };
+		0557FA052B4A5AE000D05A3C /* ErrorMessageEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0557FA042B4A5AE000D05A3C /* ErrorMessageEnum.swift */; };
+		0557FA072B4A640200D05A3C /* CredentialLoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0557FA062B4A640200D05A3C /* CredentialLoginUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,7 +69,6 @@
 		0517F1BC2AE7581000FD855A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0517F1BE2AE7581100FD855A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0517F1C12AE7581100FD855A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0517F1C82AE758F600FD855A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0517F2022AE7685400FD855A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05364DC22B3704A100B00A16 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		05364DC52B3704B000B00A16 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
@@ -72,6 +81,16 @@
 		054BA01A2B3C0F5500DC82A2 /* RegisterRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequestModel.swift; sourceTree = "<group>"; };
 		054BA01F2B3C123300DC82A2 /* LoginReponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginReponseModel.swift; sourceTree = "<group>"; };
 		054BA0222B3C217400DC82A2 /* EnvironmentValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentValues.swift; sourceTree = "<group>"; };
+		0557F9EA2B4950CC00D05A3C /* EmailLoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginUseCase.swift; sourceTree = "<group>"; };
+		0557F9ED2B4950E000D05A3C /* LoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
+		0557F9F12B4951AC00D05A3C /* LoginRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepositoryImpl.swift; sourceTree = "<group>"; };
+		0557F9F62B4952AC00D05A3C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		0557F9F82B49530400D05A3C /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		0557F9FF2B495BFC00D05A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0557FA002B495E2900D05A3C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0557FA022B4A523E00D05A3C /* GoogleLoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleLoginUseCase.swift; sourceTree = "<group>"; };
+		0557FA042B4A5AE000D05A3C /* ErrorMessageEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessageEnum.swift; sourceTree = "<group>"; };
+		0557FA062B4A640200D05A3C /* CredentialLoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialLoginUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,12 +105,14 @@
 				0517F1CC2AE75DF700FD855A /* FirebaseAnalytics in Frameworks */,
 				0517F1CE2AE75DF700FD855A /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 				0517F1F42AE75DF700FD855A /* FirebaseMLModelDownloader in Frameworks */,
+				0557F9FE2B49560F00D05A3C /* GoogleSignInSwift in Frameworks */,
 				0517F1E82AE75DF700FD855A /* FirebaseFirestoreSwift in Frameworks */,
 				0517F1D42AE75DF700FD855A /* FirebaseAppCheck in Frameworks */,
 				0517F1D22AE75DF700FD855A /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 				0517F1D82AE75DF700FD855A /* FirebaseAuth in Frameworks */,
 				0517F1DC2AE75DF700FD855A /* FirebaseCrashlytics in Frameworks */,
 				0517F1FC2AE75DF700FD855A /* FirebaseRemoteConfigSwift in Frameworks */,
+				0557F9FC2B49560F00D05A3C /* GoogleSignIn in Frameworks */,
 				0517F1EE2AE75DF700FD855A /* FirebaseInAppMessaging-Beta in Frameworks */,
 				0517F1E02AE75DF700FD855A /* FirebaseDatabaseSwift in Frameworks */,
 				0517F1EA2AE75DF700FD855A /* FirebaseFunctions in Frameworks */,
@@ -116,7 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				0517F1B92AE7581000FD855A /* StudyFora */,
-				0517F1C82AE758F600FD855A /* GoogleService-Info.plist */,
+				0557FA002B495E2900D05A3C /* GoogleService-Info.plist */,
 				0517F1B82AE7581000FD855A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -132,6 +153,7 @@
 		0517F1B92AE7581000FD855A /* StudyFora */ = {
 			isa = PBXGroup;
 			children = (
+				0557F9FF2B495BFC00D05A3C /* Info.plist */,
 				05364DBE2B37040E00B00A16 /* Components */,
 				05364DBC2B36CFFB00B00A16 /* Core */,
 				05364DB22B36A63600B00A16 /* Features */,
@@ -298,6 +320,7 @@
 			isa = PBXGroup;
 			children = (
 				05364DC82B37075600B00A16 /* StatesEnum.swift */,
+				0557FA042B4A5AE000D05A3C /* ErrorMessageEnum.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -371,7 +394,9 @@
 		054BA01C2B3C120400DC82A2 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				0557F9EF2B49518E00D05A3C /* Data */,
 				054BA01D2B3C122200DC82A2 /* Domain */,
+				0557F9F32B49523300D05A3C /* Presentation */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -379,6 +404,8 @@
 		054BA01D2B3C122200DC82A2 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				0557F9EC2B4950D800D05A3C /* Repository */,
+				0557F9E92B4950C300D05A3C /* UseCase */,
 				054BA01E2B3C122800DC82A2 /* Model */,
 			);
 			path = Domain;
@@ -398,6 +425,65 @@
 				054BA0222B3C217400DC82A2 /* EnvironmentValues.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		0557F9E92B4950C300D05A3C /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				0557F9EA2B4950CC00D05A3C /* EmailLoginUseCase.swift */,
+				0557FA062B4A640200D05A3C /* CredentialLoginUseCase.swift */,
+				0557FA022B4A523E00D05A3C /* GoogleLoginUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		0557F9EC2B4950D800D05A3C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				0557F9ED2B4950E000D05A3C /* LoginRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		0557F9EF2B49518E00D05A3C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0557F9F02B49519400D05A3C /* RepositoryImpl */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0557F9F02B49519400D05A3C /* RepositoryImpl */ = {
+			isa = PBXGroup;
+			children = (
+				0557F9F12B4951AC00D05A3C /* LoginRepositoryImpl.swift */,
+			);
+			path = RepositoryImpl;
+			sourceTree = "<group>";
+		};
+		0557F9F32B49523300D05A3C /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				0557F9F42B49523A00D05A3C /* ViewModel */,
+				0557F9F52B49523F00D05A3C /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		0557F9F42B49523A00D05A3C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0557F9F82B49530400D05A3C /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0557F9F52B49523F00D05A3C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0557F9F62B4952AC00D05A3C /* LoginView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -445,6 +531,8 @@
 				0517F1FB2AE75DF700FD855A /* FirebaseRemoteConfigSwift */,
 				0517F1FD2AE75DF700FD855A /* FirebaseStorage */,
 				0517F1FF2AE75DF700FD855A /* FirebaseStorageCombine-Community */,
+				0557F9FB2B49560F00D05A3C /* GoogleSignIn */,
+				0557F9FD2B49560F00D05A3C /* GoogleSignInSwift */,
 			);
 			productName = StudyFora;
 			productReference = 0517F1B72AE7581000FD855A /* StudyFora.app */;
@@ -476,6 +564,7 @@
 			mainGroup = 0517F1AE2AE7581000FD855A;
 			packageReferences = (
 				0517F1CA2AE75DF700FD855A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				0557F9FA2B49560F00D05A3C /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			productRefGroup = 0517F1B82AE7581000FD855A /* Products */;
 			projectDirPath = "";
@@ -493,7 +582,7 @@
 			files = (
 				0517F1C22AE7581100FD855A /* Preview Assets.xcassets in Resources */,
 				0517F1BF2AE7581100FD855A /* Assets.xcassets in Resources */,
-				0517F1C92AE758F600FD855A /* GoogleService-Info.plist in Resources */,
+				0557FA012B495E2900D05A3C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,18 +622,26 @@
 			files = (
 				054BA0032B3A78B500DC82A2 /* ProfileView.swift in Sources */,
 				054BA0142B3AE10F00DC82A2 /* RegisterRepositoryImpl.swift in Sources */,
+				0557FA032B4A523E00D05A3C /* GoogleLoginUseCase.swift in Sources */,
 				0517F2032AE7685400FD855A /* AppDelegate.swift in Sources */,
 				0517F1BD2AE7581000FD855A /* ContentView.swift in Sources */,
+				0557FA052B4A5AE000D05A3C /* ErrorMessageEnum.swift in Sources */,
 				05364DC32B3704A100B00A16 /* RegisterView.swift in Sources */,
 				054BA0002B3A76AB00DC82A2 /* Router.swift in Sources */,
 				05364DC62B3704B000B00A16 /* RegisterViewModel.swift in Sources */,
 				054BA0092B3ADC0700DC82A2 /* RegisterRepository.swift in Sources */,
 				05364DC92B37075600B00A16 /* StatesEnum.swift in Sources */,
+				0557F9F22B4951AC00D05A3C /* LoginRepositoryImpl.swift in Sources */,
+				0557FA072B4A640200D05A3C /* CredentialLoginUseCase.swift in Sources */,
+				0557F9EE2B4950E000D05A3C /* LoginRepository.swift in Sources */,
 				054BA0232B3C217400DC82A2 /* EnvironmentValues.swift in Sources */,
+				0557F9F72B4952AC00D05A3C /* LoginView.swift in Sources */,
 				054BA00B2B3ADCA400DC82A2 /* RegisterUseCase.swift in Sources */,
 				054BA01B2B3C0F5500DC82A2 /* RegisterRequestModel.swift in Sources */,
 				0517F1BB2AE7581000FD855A /* StudyForaApp.swift in Sources */,
 				054BA0202B3C123300DC82A2 /* LoginReponseModel.swift in Sources */,
+				0557F9F92B49530400D05A3C /* LoginViewModel.swift in Sources */,
+				0557F9EB2B4950CC00D05A3C /* EmailLoginUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -682,12 +779,15 @@
 				DEVELOPMENT_TEAM = BJAYFXKN5Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StudyFora/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Study Fora";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -714,12 +814,15 @@
 				DEVELOPMENT_TEAM = BJAYFXKN5Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StudyFora/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Study Fora";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -765,6 +868,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 10.16.0;
+			};
+		};
+		0557F9FA2B49560F00D05A3C /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -904,6 +1015,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0517F1CA2AE75DF700FD855A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseStorageCombine-Community";
+		};
+		0557F9FB2B49560F00D05A3C /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0557F9FA2B49560F00D05A3C /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		0557F9FD2B49560F00D05A3C /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0557F9FA2B49560F00D05A3C /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
