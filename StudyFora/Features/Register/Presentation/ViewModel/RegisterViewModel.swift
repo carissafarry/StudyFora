@@ -8,10 +8,16 @@
 import Foundation
 
 class RegisterViewModel: ObservableObject {
+    static var shared = RegisterViewModel()
+    
     private var registerUseCase = RegisterUseCase(repository: RegisterRepositoryImpl())
     
     @Published var states: StatesEnum = .initiate
     @Published var userLogin: LoginResponseModel?
+    
+    init() {
+        print("RegisterViewModel initialized!")
+    }
     
     func register(data: RegisterRequestModel) async {
         do {

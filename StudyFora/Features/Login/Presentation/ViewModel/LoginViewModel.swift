@@ -10,6 +10,8 @@ import GoogleSignIn
 import FirebaseAuth
 
 class LoginViewModel: ObservableObject {
+    static var shared = LoginViewModel(loginRepository: LoginRepositoryImpl())
+    
     private var loginRepository: LoginRepository
     private var emailLoginUseCase: EmailLoginUseCase
 //    = EmailLoginUseCase(repository: loginRepository)

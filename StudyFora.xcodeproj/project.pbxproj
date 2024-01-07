@@ -49,7 +49,6 @@
 		054BA0142B3AE10F00DC82A2 /* RegisterRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054BA0132B3AE10F00DC82A2 /* RegisterRepositoryImpl.swift */; };
 		054BA01B2B3C0F5500DC82A2 /* RegisterRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054BA01A2B3C0F5500DC82A2 /* RegisterRequestModel.swift */; };
 		054BA0202B3C123300DC82A2 /* LoginReponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054BA01F2B3C123300DC82A2 /* LoginReponseModel.swift */; };
-		054BA0232B3C217400DC82A2 /* EnvironmentValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054BA0222B3C217400DC82A2 /* EnvironmentValues.swift */; };
 		0557F9EB2B4950CC00D05A3C /* EmailLoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0557F9EA2B4950CC00D05A3C /* EmailLoginUseCase.swift */; };
 		0557F9EE2B4950E000D05A3C /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0557F9ED2B4950E000D05A3C /* LoginRepository.swift */; };
 		0557F9F22B4951AC00D05A3C /* LoginRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0557F9F12B4951AC00D05A3C /* LoginRepositoryImpl.swift */; };
@@ -61,6 +60,7 @@
 		0557FA032B4A523E00D05A3C /* GoogleLoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0557FA022B4A523E00D05A3C /* GoogleLoginUseCase.swift */; };
 		0557FA052B4A5AE000D05A3C /* ErrorMessageEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0557FA042B4A5AE000D05A3C /* ErrorMessageEnum.swift */; };
 		0557FA072B4A640200D05A3C /* CredentialLoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0557FA062B4A640200D05A3C /* CredentialLoginUseCase.swift */; };
+		0557FA092B4A6D1400D05A3C /* EnvironmentValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0557FA082B4A6D1400D05A3C /* EnvironmentValues.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,7 +80,6 @@
 		054BA0132B3AE10F00DC82A2 /* RegisterRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRepositoryImpl.swift; sourceTree = "<group>"; };
 		054BA01A2B3C0F5500DC82A2 /* RegisterRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequestModel.swift; sourceTree = "<group>"; };
 		054BA01F2B3C123300DC82A2 /* LoginReponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginReponseModel.swift; sourceTree = "<group>"; };
-		054BA0222B3C217400DC82A2 /* EnvironmentValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentValues.swift; sourceTree = "<group>"; };
 		0557F9EA2B4950CC00D05A3C /* EmailLoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginUseCase.swift; sourceTree = "<group>"; };
 		0557F9ED2B4950E000D05A3C /* LoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
 		0557F9F12B4951AC00D05A3C /* LoginRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepositoryImpl.swift; sourceTree = "<group>"; };
@@ -91,6 +90,7 @@
 		0557FA022B4A523E00D05A3C /* GoogleLoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleLoginUseCase.swift; sourceTree = "<group>"; };
 		0557FA042B4A5AE000D05A3C /* ErrorMessageEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessageEnum.swift; sourceTree = "<group>"; };
 		0557FA062B4A640200D05A3C /* CredentialLoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialLoginUseCase.swift; sourceTree = "<group>"; };
+		0557FA082B4A6D1400D05A3C /* EnvironmentValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentValues.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -422,7 +422,7 @@
 		054BA0212B3C20AD00DC82A2 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				054BA0222B3C217400DC82A2 /* EnvironmentValues.swift */,
+				0557FA082B4A6D1400D05A3C /* EnvironmentValues.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -634,10 +634,10 @@
 				0557F9F22B4951AC00D05A3C /* LoginRepositoryImpl.swift in Sources */,
 				0557FA072B4A640200D05A3C /* CredentialLoginUseCase.swift in Sources */,
 				0557F9EE2B4950E000D05A3C /* LoginRepository.swift in Sources */,
-				054BA0232B3C217400DC82A2 /* EnvironmentValues.swift in Sources */,
 				0557F9F72B4952AC00D05A3C /* LoginView.swift in Sources */,
 				054BA00B2B3ADCA400DC82A2 /* RegisterUseCase.swift in Sources */,
 				054BA01B2B3C0F5500DC82A2 /* RegisterRequestModel.swift in Sources */,
+				0557FA092B4A6D1400D05A3C /* EnvironmentValues.swift in Sources */,
 				0517F1BB2AE7581000FD855A /* StudyForaApp.swift in Sources */,
 				054BA0202B3C123300DC82A2 /* LoginReponseModel.swift in Sources */,
 				0557F9F92B49530400D05A3C /* LoginViewModel.swift in Sources */,
