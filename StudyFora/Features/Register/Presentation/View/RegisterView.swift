@@ -10,7 +10,7 @@ import SwiftUI
 struct RegisterView: View {
     @EnvironmentObject var router: Router
     
-    @StateObject var registerViewModel = RegisterViewModel()
+    @Environment(\.registerViewModel) private var registerViewModel
     
     @State private var email = ""
     @State private var password = ""

@@ -28,7 +28,7 @@ struct GoogleLoginUseCase {
         GIDSignIn.sharedInstance.configuration = config
         
         return try await withCheckedThrowingContinuation { continuation in
-            repository.signIn(config: config, presentedUI: rootViewController) { credential in
+            repository.googleSignIn(config: config, presentedUI: rootViewController) { credential in
                 do {
                     let credential = try credential.get()
                     print("User logined with Google successfully!")

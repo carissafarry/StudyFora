@@ -10,8 +10,7 @@ import GoogleSignInSwift
 
 struct LoginView: View {
     @EnvironmentObject var router: Router
-    
-    @StateObject var loginViewModel = LoginViewModel(loginRepository: LoginRepositoryImpl())
+    @EnvironmentObject var loginViewModel: LoginViewModel
     
     @State var email = ""
     @State var password = ""

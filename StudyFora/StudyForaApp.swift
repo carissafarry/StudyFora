@@ -12,6 +12,12 @@ struct StudyForaApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     @ObservedObject var router = Router()
     
+    // MARK: - States
+    @State private var registerViewModel = RegisterViewModel.shared
+    
+    // MARK: - State Objects
+    @StateObject private var loginViewModel = LoginViewModel.shared
+    
     var body: some Scene {
         WindowGroup {
             NavigationStack(path: $router.navPath) {
@@ -20,6 +26,8 @@ struct StudyForaApp: App {
                     Routes(route: destination)
                 }
             }
+            .environment(\.registerViewModel, registerViewModel)
+            .environmentObject(loginViewModel)
             .environmentObject(router)
             
         }
