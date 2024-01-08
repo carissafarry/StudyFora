@@ -61,6 +61,14 @@
 		0557FA052B4A5AE000D05A3C /* ErrorMessageEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0557FA042B4A5AE000D05A3C /* ErrorMessageEnum.swift */; };
 		0557FA072B4A640200D05A3C /* CredentialLoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0557FA062B4A640200D05A3C /* CredentialLoginUseCase.swift */; };
 		0557FA092B4A6D1400D05A3C /* EnvironmentValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0557FA082B4A6D1400D05A3C /* EnvironmentValues.swift */; };
+		0557FA0C2B4A7A0F00D05A3C /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0557FA0B2B4A7A0F00D05A3C /* ButtonsView.swift */; };
+		0557FA0E2B4A7A2300D05A3C /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0557FA0D2B4A7A2300D05A3C /* MainButton.swift */; };
+		0557FA102B4A7D0E00D05A3C /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0557FA0F2B4A7D0E00D05A3C /* UIDevice.swift */; };
+		0557FA122B4A7D9200D05A3C /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0557FA112B4A7D9200D05A3C /* Color.swift */; };
+		0557FA172B4BD48D00D05A3C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0557FA162B4BD48D00D05A3C /* UserModel.swift */; };
+		0557FA192B4BDF8A00D05A3C /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0557FA182B4BDF8A00D05A3C /* UserRepository.swift */; };
+		0557FA1B2B4BE0B100D05A3C /* UserRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0557FA1A2B4BE0B100D05A3C /* UserRepositoryImpl.swift */; };
+		0557FA1E2B4BE6A400D05A3C /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0557FA1D2B4BE6A400D05A3C /* ProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +99,14 @@
 		0557FA042B4A5AE000D05A3C /* ErrorMessageEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessageEnum.swift; sourceTree = "<group>"; };
 		0557FA062B4A640200D05A3C /* CredentialLoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialLoginUseCase.swift; sourceTree = "<group>"; };
 		0557FA082B4A6D1400D05A3C /* EnvironmentValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentValues.swift; sourceTree = "<group>"; };
+		0557FA0B2B4A7A0F00D05A3C /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
+		0557FA0D2B4A7A2300D05A3C /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
+		0557FA0F2B4A7D0E00D05A3C /* UIDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
+		0557FA112B4A7D9200D05A3C /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		0557FA162B4BD48D00D05A3C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		0557FA182B4BDF8A00D05A3C /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		0557FA1A2B4BE0B100D05A3C /* UserRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryImpl.swift; sourceTree = "<group>"; };
+		0557FA1D2B4BE6A400D05A3C /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,9 +204,9 @@
 		05364DB32B36A6A700B00A16 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				05364DB42B36A6C000B00A16 /* Data */,
 				05364DB52B36A6C500B00A16 /* Domain */,
 				05364DB62B36A6CB00B00A16 /* Presentation */,
-				05364DB42B36A6C000B00A16 /* Data */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -217,6 +233,7 @@
 		05364DB62B36A6CB00B00A16 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				0557FA1C2B4BE69B00D05A3C /* ViewModel */,
 				054BA0012B3A78AA00DC82A2 /* View */,
 			);
 			path = Presentation;
@@ -232,6 +249,7 @@
 		05364DB82B36CD9700B00A16 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0557FA162B4BD48D00D05A3C /* UserModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -239,6 +257,7 @@
 		05364DB92B36CD9B00B00A16 /* RepositoryImpl */ = {
 			isa = PBXGroup;
 			children = (
+				0557FA1A2B4BE0B100D05A3C /* UserRepositoryImpl.swift */,
 			);
 			path = RepositoryImpl;
 			sourceTree = "<group>";
@@ -253,6 +272,7 @@
 		05364DBB2B36CFBD00B00A16 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				0557FA182B4BDF8A00D05A3C /* UserRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -277,6 +297,7 @@
 		05364DBE2B37040E00B00A16 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				0557FA0A2B4A79E200D05A3C /* Button */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -423,6 +444,8 @@
 			isa = PBXGroup;
 			children = (
 				0557FA082B4A6D1400D05A3C /* EnvironmentValues.swift */,
+				0557FA0F2B4A7D0E00D05A3C /* UIDevice.swift */,
+				0557FA112B4A7D9200D05A3C /* Color.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -484,6 +507,23 @@
 				0557F9F62B4952AC00D05A3C /* LoginView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		0557FA0A2B4A79E200D05A3C /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				0557FA0B2B4A7A0F00D05A3C /* ButtonsView.swift */,
+				0557FA0D2B4A7A2300D05A3C /* MainButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		0557FA1C2B4BE69B00D05A3C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0557FA1D2B4BE6A400D05A3C /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -620,14 +660,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0557FA102B4A7D0E00D05A3C /* UIDevice.swift in Sources */,
 				054BA0032B3A78B500DC82A2 /* ProfileView.swift in Sources */,
 				054BA0142B3AE10F00DC82A2 /* RegisterRepositoryImpl.swift in Sources */,
 				0557FA032B4A523E00D05A3C /* GoogleLoginUseCase.swift in Sources */,
 				0517F2032AE7685400FD855A /* AppDelegate.swift in Sources */,
 				0517F1BD2AE7581000FD855A /* ContentView.swift in Sources */,
+				0557FA1B2B4BE0B100D05A3C /* UserRepositoryImpl.swift in Sources */,
+				0557FA0C2B4A7A0F00D05A3C /* ButtonsView.swift in Sources */,
 				0557FA052B4A5AE000D05A3C /* ErrorMessageEnum.swift in Sources */,
 				05364DC32B3704A100B00A16 /* RegisterView.swift in Sources */,
 				054BA0002B3A76AB00DC82A2 /* Router.swift in Sources */,
+				0557FA1E2B4BE6A400D05A3C /* ProfileViewModel.swift in Sources */,
 				05364DC62B3704B000B00A16 /* RegisterViewModel.swift in Sources */,
 				054BA0092B3ADC0700DC82A2 /* RegisterRepository.swift in Sources */,
 				05364DC92B37075600B00A16 /* StatesEnum.swift in Sources */,
@@ -635,10 +679,14 @@
 				0557FA072B4A640200D05A3C /* CredentialLoginUseCase.swift in Sources */,
 				0557F9EE2B4950E000D05A3C /* LoginRepository.swift in Sources */,
 				0557F9F72B4952AC00D05A3C /* LoginView.swift in Sources */,
+				0557FA122B4A7D9200D05A3C /* Color.swift in Sources */,
+				0557FA192B4BDF8A00D05A3C /* UserRepository.swift in Sources */,
 				054BA00B2B3ADCA400DC82A2 /* RegisterUseCase.swift in Sources */,
 				054BA01B2B3C0F5500DC82A2 /* RegisterRequestModel.swift in Sources */,
 				0557FA092B4A6D1400D05A3C /* EnvironmentValues.swift in Sources */,
+				0557FA172B4BD48D00D05A3C /* UserModel.swift in Sources */,
 				0517F1BB2AE7581000FD855A /* StudyForaApp.swift in Sources */,
+				0557FA0E2B4A7A2300D05A3C /* MainButton.swift in Sources */,
 				054BA0202B3C123300DC82A2 /* LoginReponseModel.swift in Sources */,
 				0557F9F92B49530400D05A3C /* LoginViewModel.swift in Sources */,
 				0557F9EB2B4950CC00D05A3C /* EmailLoginUseCase.swift in Sources */,
