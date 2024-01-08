@@ -44,5 +44,8 @@ struct RegisterViewModelKey: EnvironmentKey {
 }
 
 struct LoginViewModelKey: EnvironmentKey {
-    static let defaultValue: LoginViewModel = .init(loginRepository: LoginRepositoryImpl())
+    static let defaultValue: LoginViewModel = .init(
+        loginRepository: LoginRepositoryImpl(),
+        userRepository: UserRepositoryImpl.shared
+    )
 }

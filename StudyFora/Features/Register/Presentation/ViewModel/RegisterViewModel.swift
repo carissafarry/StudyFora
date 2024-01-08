@@ -13,7 +13,7 @@ class RegisterViewModel: ObservableObject {
     private var registerUseCase = RegisterUseCase(repository: RegisterRepositoryImpl())
     
     @Published var states: StatesEnum = .initiate
-    @Published var userLogin: LoginResponseModel?
+    @Published var userLogin: UserModel?
     
     init() {
         print("RegisterViewModel initialized!")
@@ -24,13 +24,13 @@ class RegisterViewModel: ObservableObject {
             states = .loading
             
             if let res = try await registerUseCase.execute(data: data) {
-                userLogin = LoginResponseModel(
+                userLogin = UserModel(
                     uid: res.user.uid,
                     email: res.user.email!
                 )
             }
             states = .success
-        } catch let error {
+        } catch _ {
             states = .error
         }
     }

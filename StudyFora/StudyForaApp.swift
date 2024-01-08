@@ -14,8 +14,9 @@ struct StudyForaApp: App {
     
     // MARK: - States
     @State private var registerViewModel = RegisterViewModel.shared
-    @State private var loginViewModel = LoginViewModel.shared
     
+    // MARK: - State Objects
+    @StateObject private var loginViewModel = LoginViewModel.shared
     
     var body: some Scene {
         WindowGroup {
@@ -26,7 +27,7 @@ struct StudyForaApp: App {
                 }
             }
             .environment(\.registerViewModel, registerViewModel)
-            .environment(\.loginViewModel, loginViewModel)
+            .environmentObject(loginViewModel)
             .environmentObject(router)
             
         }

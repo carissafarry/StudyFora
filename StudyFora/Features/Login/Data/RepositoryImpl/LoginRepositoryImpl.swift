@@ -10,6 +10,7 @@ import FirebaseAuth
 import GoogleSignIn
 
 struct LoginRepositoryImpl: LoginRepository {
+    // MARK: - Email Log In
     func login(withEmail data: RegisterRequestModel, completion: @escaping (Result<AuthDataResult, Error>) -> Void) {
         Auth.auth().signIn(withEmail: data.email, password: data.password) { authResult, error in
             if let error = error {
@@ -34,8 +35,9 @@ struct LoginRepositoryImpl: LoginRepository {
         }
     }
     
-    func signIn(config: GIDConfiguration, presentedUI: UIViewController, completion: @escaping (Result<AuthCredential, Error>) -> Void) {
-        
+    
+    // MARK: - Google Log In
+    func googleSignIn(config: GIDConfiguration, presentedUI: UIViewController, completion: @escaping (Result<AuthCredential, Error>) -> Void) {
         GIDSignIn.sharedInstance.signIn(withPresenting: presentedUI) { result, error in
             guard error == nil else {
                 fatalError(error!.localizedDescription)
