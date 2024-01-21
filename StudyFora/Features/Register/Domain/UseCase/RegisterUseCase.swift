@@ -26,4 +26,13 @@ struct RegisterUseCase {
             }
         }
     }
+    
+    // MARK: Execute firebase from service class directly without repository
+    func executeWithService(data: RegisterRequestModel) async throws -> AuthDataResult? {
+        let result = try await AuthService.shared.createUser(
+            withEmail: data.email,
+            password: data.password
+        )
+        return result
+    }
 }

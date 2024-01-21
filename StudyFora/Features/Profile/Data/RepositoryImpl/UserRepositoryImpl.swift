@@ -8,6 +8,8 @@
 import Foundation
 import Firebase
 
+// MARK: NOT USED -------
+
 // Make UserRepositoryImpl as Class so the data can be shared over multiple ViewModel
 
 class UserRepositoryImpl: UserRepository, ObservableObject {

@@ -29,11 +29,12 @@ class LoginViewModel: ObservableObject {
     
     @Published var states: StatesEnum = .initiate
     
-    var userLogin: UserModel? {
-        didSet {
-            _ = userRepository.saveUser(user: userLogin!)
-        }
-    }
+    // MARK: Using AuthService.userSession
+//    var userLogin: UserModel? {
+//        didSet {
+//            _ = userRepository.saveUser(user: userLogin!)
+//        }
+//    }
     
     init(loginRepository: LoginRepository, userRepository: UserRepository) {
         self.loginRepository = loginRepository // how to assign repository directly to viewmodel without usecase
@@ -43,16 +44,13 @@ class LoginViewModel: ObservableObject {
         self.credentialLoginUseCase = CredentialLoginUseCase(repository: self.loginRepository)
     }
     
+    @MainActor
     func emailLogin(data: RegisterRequestModel) async {
         do {
             states = .loading
             
-            if let res = try await emailLoginUseCase.execute(data: data) {
-                self.userLogin = UserModel(
-                    uid: res.user.uid,
-                    email: res.user.email!
-                )
-            }
+            // MARK: Not using repository, but using AuthService
+            let res = try await emailLoginUseCase.executeWithService(data: data)
             
             states = .success
         } catch _ {
@@ -60,16 +58,15 @@ class LoginViewModel: ObservableObject {
         }
     }
     
+    @MainActor
     func googleLogin() async {
         do {
             states = .loading
             
+            // MARK: Using repository
             if let credential = try await googleLoginUseCase.execute() {
                 if let res = try await credentialLoginUseCase.execute(credential: credential) {
-                    userLogin = UserModel(
-                        uid: res.user.uid,
-                        email: res.user.email!
-                    )
+                    AuthService.shared.userSession = res.user
                 }
             }
             

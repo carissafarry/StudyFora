@@ -8,13 +8,14 @@
 import Foundation
 import FirebaseAuth
 
-struct UserModel {
-    let uid: String
-    let email: String
-    let password: String? = ""
-    let username: String? = ""
-    let photoUrl: String? = ""
-    let isEmailVerified: Bool? = false
+struct UserModel: Codable, Hashable {
+    var uid: String
+    var email: String
+    var password: String? = ""
+    var username: String? = ""
+    var fullname: String? = ""
+    var photoUrl: String? = ""
+    var isEmailVerified: Bool? = false
 }
 
 extension UserModel {

@@ -13,22 +13,18 @@ class RegisterViewModel: ObservableObject {
     private var registerUseCase = RegisterUseCase(repository: RegisterRepositoryImpl())
     
     @Published var states: StatesEnum = .initiate
-    @Published var userLogin: UserModel?
     
     init() {
         print("RegisterViewModel initialized!")
     }
     
+    @MainActor
     func register(data: RegisterRequestModel) async {
         do {
             states = .loading
             
-            if let res = try await registerUseCase.execute(data: data) {
-                userLogin = UserModel(
-                    uid: res.user.uid,
-                    email: res.user.email!
-                )
-            }
+            // MARK: Not using repository, but using UserService
+            let res = try await registerUseCase.executeWithService(data: data)
             states = .success
         } catch _ {
             states = .error
