@@ -15,26 +15,20 @@ class LoginViewModel: ObservableObject {
         userRepository: UserRepositoryImpl.shared
     )
     
+    @Published var isLogined: Bool = false
+    @Published var email = ""
+    @Published var password = ""
+    
     // MARK: - Repository
     private var loginRepository: LoginRepository
     private var userRepository: UserRepository
     
     // MARK: - UseCase
     private var emailLoginUseCase: EmailLoginUseCase
-//    = EmailLoginUseCase(repository: loginRepository)
     private var googleLoginUseCase: GoogleLoginUseCase
     private var credentialLoginUseCase: CredentialLoginUseCase
-//    = GoogleLoginUseCase(repository: loginRepository)
-    
     
     @Published var states: StatesEnum = .initiate
-    
-    // MARK: Using AuthService.userSession
-//    var userLogin: UserModel? {
-//        didSet {
-//            _ = userRepository.saveUser(user: userLogin!)
-//        }
-//    }
     
     init(loginRepository: LoginRepository, userRepository: UserRepository) {
         self.loginRepository = loginRepository // how to assign repository directly to viewmodel without usecase
@@ -45,14 +39,15 @@ class LoginViewModel: ObservableObject {
     }
     
     @MainActor
-    func emailLogin(data: RegisterRequestModel) async {
+    func emailLogin() async {
         do {
             states = .loading
-            
+            let data = RegisterRequestModel(email: email, password: password)
             // MARK: Not using repository, but using AuthService
-            let res = try await emailLoginUseCase.executeWithService(data: data)
-            
-            states = .success
+            if let res = try await emailLoginUseCase.executeWithService(data: data) {
+                isLogined = true
+                states = .success
+            }
         } catch _ {
             states = .error
         }
@@ -67,10 +62,10 @@ class LoginViewModel: ObservableObject {
             if let credential = try await googleLoginUseCase.execute() {
                 if let res = try await credentialLoginUseCase.execute(credential: credential) {
                     AuthService.shared.userSession = res.user
+                    isLogined = true
+                    states = .success
                 }
             }
-            
-            states = .success
         } catch {
             states = .error
         }

@@ -33,6 +33,7 @@ struct RegisterUseCase {
             withEmail: data.email,
             password: data.password
         )
+        print("User registered!")
         return result
     }
 }

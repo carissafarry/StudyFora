@@ -10,20 +10,19 @@ import SwiftUI
 struct RegisterView: View {
     @EnvironmentObject var router: Router
     
-    @Environment(\.registerViewModel) private var registerViewModel
-    
-    @State private var email = ""
-    @State private var password = ""
+    @EnvironmentObject var registerViewModel: RegisterViewModel
     
     var body: some View {
         VStack {
             Text("Register")
-            TextField("Email", text: self.$email)
-            TextField("Password", text: self.$password)
+            TextField("Email", text: $registerViewModel.email)
+                .modifier(TextFieldModifier())
+            TextField("Password", text: $registerViewModel.password)
+                .modifier(TextFieldModifier())
             Button("Register") {
                 Task {
-                    await registerViewModel.register(data: RegisterRequestModel(email: email, password: password))
-                    print(email)
+                    await registerViewModel.register()
+                    router.navigateBack()
                 }
             }
             Button("Back") {

@@ -12,18 +12,19 @@ struct LoginView: View {
     @EnvironmentObject var router: Router
     @EnvironmentObject var loginViewModel: LoginViewModel
     
-    @State var email = ""
-    @State var password = ""
-    
     var body: some View {
         VStack {
             Text("Login")
-            TextField("Email", text: $email)
-            SecureField("Password", text: $password)
+            TextField("Email", text: $loginViewModel.email)
+                .textInputAutocapitalization(.none)
+                .modifier(TextFieldModifier())
+            SecureField("Password", text: $loginViewModel.password)
+                .textInputAutocapitalization(.none)
+                .modifier(TextFieldModifier())
             Button(action: {
                 Task {
-                    await loginViewModel.emailLogin(data: RegisterRequestModel(email: email, password: password))
-                    print(email)
+                    await loginViewModel.emailLogin()
+                    print(loginViewModel.email)
                 }
             }) {
                 Text("Log in")
@@ -32,7 +33,7 @@ struct LoginView: View {
             GoogleSignInButton(viewModel: GoogleSignInButtonViewModel(scheme: .light, style: .wide, state: .normal), action: {
                 Task {
                     await loginViewModel.googleLogin()
-                    print(email)
+                    print(loginViewModel.email)
                 }
             })
             

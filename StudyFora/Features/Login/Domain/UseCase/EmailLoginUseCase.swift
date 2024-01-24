@@ -29,10 +29,13 @@ struct EmailLoginUseCase {
     
     // MARK: Execute firebase from service class directly without repository
     func executeWithService(data: RegisterRequestModel) async throws -> AuthDataResult? {
-        let result = try await AuthService.shared.login(
+        if let result = try await AuthService.shared.login(
             withEmail: data.email,
             password: data.password
-        )
-        return result
+        ) {
+            print("User logined with email successfully!")
+            return result
+        }
+        return nil
     }
 }

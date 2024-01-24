@@ -18,14 +18,9 @@ extension EnvironmentValues {
     
     // MARK: - View Model
     
-    var registerViewModel: RegisterViewModel {
-        get { self[RegisterViewModelKey.self] }
-        set { self[RegisterViewModelKey.self] = newValue }
-    }
-    
-    var loginViewModel: LoginViewModel {
-        get { self[LoginViewModelKey.self] }
-        set { self[LoginViewModelKey.self] = newValue }
+    var contentViewModel: ContentViewModel {
+        get { self[ContentViewModelKey.self] }
+        set { self[ContentViewModelKey.self] = newValue }
     }
 }
 
@@ -39,13 +34,6 @@ struct CustomFontKey: EnvironmentKey {
 
 // MARK: - View Model Environment Keys
 
-struct RegisterViewModelKey: EnvironmentKey {
-    static let defaultValue: RegisterViewModel = .init()
-}
-
-struct LoginViewModelKey: EnvironmentKey {
-    static let defaultValue: LoginViewModel = .init(
-        loginRepository: LoginRepositoryImpl(),
-        userRepository: UserRepositoryImpl.shared
-    )
+struct ContentViewModelKey: EnvironmentKey {
+    static let defaultValue: ContentViewModel = .init()
 }
