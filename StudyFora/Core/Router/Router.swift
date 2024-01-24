@@ -16,6 +16,8 @@ struct Routes: View {
             RegisterView()
         case .login:
             LoginView()
+        case .home:
+            HomeView()
         case .profile:
             ProfileView()
         }
@@ -27,6 +29,7 @@ final class Router: ObservableObject {
     public enum Destination: Codable, Hashable {
         case register
         case login
+        case home
         case profile
     }
 
