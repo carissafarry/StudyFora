@@ -17,7 +17,7 @@ struct MainButton: ButtonStyle {
     
     enum ButtonType {
         case normalButton
-        case backButton
+        case circleButton
         case tabViewButton
     }
 
@@ -40,14 +40,17 @@ struct MainButton: ButtonStyle {
                 RoundedRectangle(cornerRadius: cornerRadius)
                     .fill(bgColor)
                     .shadow(radius: 2, y: 1)
+                    .frame(width: width, height: height)
             case .tabViewButton:
                 RoundedRectangle(cornerRadius: cornerRadius)
                     .fill(bgGradientColor)
                     .shadow(radius: 2, y: 1)
-            case .backButton:
+                    .frame(width: width, height: height)
+            case .circleButton:
                 Circle()
                     .fill(bgColor)
                     .shadow(radius: 2, y: 1)
+                    .frame(width: width, height: height)
             }
             
             configuration.label
@@ -67,19 +70,22 @@ struct MainButtonView: View {
         Button(action: {}, label: {
             Image(systemName: "arrow.backward")
         })
-        .buttonStyle(MainButton(type: .backButton))
+        .buttonStyle(MainButton(type: .circleButton, width: 50))
+//        .background(.gray)
         .padding()
         
         Button(action: {}, label: {
             Text("Invite Friends")
         })
         .buttonStyle(MainButton())
+//        .background(.gray)
         .padding()
         
         Button(action: {}, label: {
             Text("FEED")
         })
         .buttonStyle(MainButton(type: .tabViewButton, width: 130))
+//        .background(.gray)
         .padding()
     }
 }

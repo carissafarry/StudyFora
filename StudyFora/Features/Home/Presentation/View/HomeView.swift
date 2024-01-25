@@ -65,19 +65,10 @@ struct HomeView: View {
                 }
                 
                 ScrollView(.horizontal, showsIndicators: false) {
-                    LazyHGrid(rows: [GridItem(.flexible())]) {
-                        ForEach(0..<4) {_ in 
-                            VStack{
-                                Rectangle()
-                                    .clipShape(.rect(cornerRadius: 10, style: .circular))
-                                    .frame(width: Screen.width * 0.4, height: Screen.height * 0.1)
-                                    .foregroundColor(.gray)
-                            
-                                Rectangle()
-                                    .clipShape(.rect(cornerRadius: 10, style: .circular))
-                                    .frame(width: Screen.width * 0.4, height: Screen.height * 0.1)
-                                    .foregroundColor(.gray)
-                            }
+                    LazyVGrid(columns: Array(repeating: GridItem(), count: 3), spacing: 10) {
+                        ForEach(0..<5) {_ in
+                            MainCard()
+                                .padding(2)
                         }
                     }
                 }
